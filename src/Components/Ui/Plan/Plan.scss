@@ -1,0 +1,1358 @@
+.Plans_container {
+    width: 100%;
+    padding-top: 50px;
+
+    .Plan {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 40px;
+
+        .Text {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+
+            .Text_left {
+                h1 {
+                    color: #FFFFFF;
+                    margin: 0px 0px 10px 0px;
+                    text-align: left;
+                }
+
+                p {
+                    color: #999999;
+                    margin-bottom: 20px;
+                    text-align: left;
+                }
+            }
+
+            .Text_right {
+
+                .Buttons {
+                    width: 200px;
+                    height: 75px;
+                    border-radius: 10px;
+                    border: 2px solid #1F1F1F;
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px;
+                    transition: all 0.25s ease-out;
+                    align-items: center;
+
+
+                    button.active {
+                        width: 120px;
+                        height: 55px;
+                        border: none;
+                        background-color: #1F1F1F;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        transition: all 0.25s ease-out;
+                        font-size: 15px;
+                    }
+
+                    button {
+                        transition: all 0.25s ease-out;
+                        width: 90px;
+                        height: 55px;
+                        border: none;
+                        background-color: transparent;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        transition: all 0.25s ease-out;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .Plans_boxes_monthly.active {
+        display: flex;
+    }
+
+    .Plans_boxes_yearly.active {
+        display: flex;
+    }
+
+    .Plans_boxes_monthly {
+        width: 100%;
+        display: none;
+        justify-content: space-around;
+        align-items: start;
+        gap: 30px;
+        padding: 0px 30px;
+        transition: all 0.4s ease-out;
+
+        .Plan_box {
+            width: 450px;
+            padding: 25px;
+            gap: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            background-color: #262626;
+            border-radius: 12px;
+            transition: all 0.4s ease-out;
+
+            .Btns {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 40px;
+                margin: 0px auto;
+
+                button:first-child {
+                    padding: 12px 20px;
+                    background-color: #141414;
+                    border: none;
+                    color: #FFFFFF;
+                    border-radius: 8px;
+                    font-size: 13px;
+                    cursor: pointer;
+                }
+
+                button:last-child {
+                    padding: 12px 20px;
+                    background-color: #E50000;
+                    border: none;
+                    color: #FFFFFF;
+                    border-radius: 8px;
+                    font-size: 13px;
+                    cursor: pointer;
+                }
+            }
+
+            h3 {
+                color: #FFFFFF;
+            }
+
+            p {
+                color: #999999;
+            }
+
+            .H2-p {
+                display: flex;
+                gap: 3px;
+
+                h2 {
+                    color: #FFFFFF;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 300;
+                }
+
+                h6 {
+                    color: #999999;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 100;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+
+    .Plans_boxes_yearly {
+        width: 100%;
+        display: none;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+        padding: 0px 30px;
+        transition: all 0.4s ease-out;
+
+        .Plan_box {
+            width: 450px;
+            padding: 25px;
+            gap: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            background-color: #262626;
+            border-radius: 12px;
+            transition: all 0.4s ease-out;
+
+            .Btns {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 40px;
+                margin: 0px auto;
+
+                button:first-child {
+                    padding: 12px 20px;
+                    background-color: #141414;
+                    border: none;
+                    color: #FFFFFF;
+                    border-radius: 8px;
+                    font-size: 13px;
+                    cursor: pointer;
+                }
+
+                button:last-child {
+                    padding: 12px 20px;
+                    background-color: #E50000;
+                    border: none;
+                    color: #FFFFFF;
+                    border-radius: 8px;
+                    font-size: 13px;
+                    cursor: pointer;
+                }
+            }
+
+            h3 {
+                color: #FFFFFF;
+            }
+
+            p {
+                color: #999999;
+            }
+
+            .H2-p {
+                display: flex;
+                gap: 3px;
+
+                h2 {
+                    color: #FFFFFF;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 300;
+                }
+
+                h6 {
+                    color: #999999;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 100;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .Plans_container {
+        width: 100%;
+
+
+        .Plan {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+
+            .Text {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .Text_left {
+                    h1 {
+                        font-size: 25px;
+                        color: #FFFFFF;
+                        margin: 0px 0px 10px 0px;
+                        text-align: left;
+                    }
+
+                    p {
+                        font-size: 13px;
+                        color: #999999;
+                        margin-bottom: 20px;
+                        text-align: left;
+                    }
+                }
+
+                .Text_right {
+                    margin: 0px auto 0px 0px;
+
+                    .Buttons {
+                        width: 200px;
+                        height: 75px;
+                        border-radius: 10px;
+                        border: 2px solid #1F1F1F;
+                        display: flex;
+                        justify-content: center;
+                        padding: 10px;
+                        transition: all 0.4s ease-out;
+
+
+                        button.active {
+                            width: 120px;
+                            height: 55px;
+                            border: none;
+                            background-color: #1F1F1F;
+                            color: #FFFFFF;
+                            border-radius: 8px;
+                            cursor: pointer;
+                        }
+
+                        button {
+                            width: 90px;
+                            height: 55px;
+                            border: none;
+                            background-color: transparent;
+                            color: #FFFFFF;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            transition: all 0.25s ease-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        .Plans_boxes_monthly.active {
+            display: flex;
+        }
+
+        .Plans_boxes_yearly.active {
+            display: flex;
+        }
+
+        .Plans_boxes_monthly {
+            width: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            padding: 0px 20px;
+            transition: all 0.4s ease-out;
+
+            .Plan_box {
+                width: 100%;
+                padding: 25px;
+                gap: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                background-color: #262626;
+                border-radius: 12px;
+                transition: all 0.4s ease-out;
+
+                .Btns {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 20px;
+                    margin: 0px auto;
+
+                    button:first-child {
+                        width: 60%;
+                        padding: 12px 20px;
+                        background-color: #141414;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+
+                    button:last-child {
+                        width: 60%;
+                        padding: 12px 20px;
+                        background-color: #E50000;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+                }
+
+                h3 {
+                    color: #FFFFFF;
+                }
+
+                p {
+                    color: #999999;
+                }
+
+                .H2-p {
+                    display: flex;
+                    gap: 3px;
+
+                    h2 {
+                        color: #FFFFFF;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 300;
+                    }
+
+                    h6 {
+                        color: #999999;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 100;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+
+        .Plans_boxes_yearly {
+            width: 100%;
+            display: none;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 0px 20px;
+            transition: all 0.4s ease-out;
+
+            .Plan_box {
+                width: 100%;
+                padding: 25px;
+                gap: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                background-color: #262626;
+                border-radius: 12px;
+                transition: all 0.4s ease-out;
+
+                .Btns {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    margin: 0px auto;
+
+                    button:first-child {
+                        width: 60%;
+                        padding: 12px 20px;
+                        background-color: #141414;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+
+                    button:last-child {
+                        width: 60%;
+                        padding: 12px 20px;
+                        background-color: #E50000;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+                }
+
+                h3 {
+                    color: #FFFFFF;
+                }
+
+                p {
+                    color: #999999;
+                }
+
+                .H2-p {
+                    display: flex;
+                    gap: 3px;
+
+                    h2 {
+                        color: #FFFFFF;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 300;
+                    }
+
+                    h6 {
+                        color: #999999;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 100;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and ((min-width: 520px) and (max-width: 769px)) {
+    .Plans_container {
+        width: 100%;
+
+
+        .Plan {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+
+            .Text {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .Text_left {
+                    h1 {
+                        color: #FFFFFF;
+                        margin: 0px 0px 10px 0px;
+                        text-align: left;
+                    }
+
+                    p {
+                        color: #999999;
+                        margin-bottom: 20px;
+                        text-align: left;
+                    }
+                }
+
+                .Text_right {
+                    margin: 0px auto 0px 0px;
+
+                    .Buttons {
+                        width: 200px;
+                        height: 75px;
+                        border-radius: 10px;
+                        border: 2px solid #1F1F1F;
+                        display: flex;
+                        justify-content: center;
+                        padding: 10px;
+                        transition: all 0.4s ease-out;
+
+
+                        button.active {
+                            width: 120px;
+                            height: 55px;
+                            border: none;
+                            background-color: #1F1F1F;
+                            color: #FFFFFF;
+                            border-radius: 8px;
+                            cursor: pointer;
+                        }
+
+                        button {
+                            width: 90px;
+                            height: 55px;
+                            border: none;
+                            background-color: transparent;
+                            color: #FFFFFF;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            transition: all 0.25s ease-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        .Plans_boxes_monthly.active {
+            display: flex;
+        }
+
+        .Plans_boxes_yearly.active {
+            display: flex;
+        }
+
+        .Plans_boxes_monthly {
+            width: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            padding: 0px 20px;
+            transition: all 0.4s ease-out;
+            flex-wrap: wrap;
+
+            .Plan_box {
+                width: 80%;
+                padding: 25px;
+                gap: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                background-color: #262626;
+                border-radius: 12px;
+                transition: all 0.4s ease-out;
+
+                .Btns {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 40px;
+                    margin: 0px auto;
+
+                    button:first-child {
+                        padding: 12px 20px;
+                        background-color: #141414;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+
+                    button:last-child {
+                        padding: 12px 20px;
+                        background-color: #E50000;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+                }
+
+                h3 {
+                    color: #FFFFFF;
+                }
+
+                p {
+                    color: #999999;
+                }
+
+                .H2-p {
+                    display: flex;
+                    gap: 3px;
+
+                    h2 {
+                        color: #FFFFFF;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 300;
+                    }
+
+                    h6 {
+                        color: #999999;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 100;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+
+        .Plans_boxes_yearly {
+            width: 100%;
+            display: none;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 0px 20px;
+            transition: all 0.4s ease-out;
+
+            .Plan_box {
+                width: 80%;
+                padding: 25px;
+                gap: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                background-color: #262626;
+                border-radius: 12px;
+                transition: all 0.4s ease-out;
+
+                .Btns {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 40px;
+                    margin: 0px auto;
+
+                    button:first-child {
+                        padding: 12px 20px;
+                        background-color: #141414;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+
+                    button:last-child {
+                        padding: 12px 20px;
+                        background-color: #E50000;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+                }
+
+                h3 {
+                    color: #FFFFFF;
+                }
+
+                p {
+                    color: #999999;
+                }
+
+                .H2-p {
+                    display: flex;
+                    gap: 3px;
+
+                    h2 {
+                        color: #FFFFFF;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 300;
+                    }
+
+                    h6 {
+                        color: #999999;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 100;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and ((min-width: 769px) and (max-width: 990px)) {
+    .Plans_container {
+        width: 100%;
+
+
+        .Plan {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+
+            .Text {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .Text_left {
+                    h1 {
+                        color: #FFFFFF;
+                        margin: 0px 0px 10px 0px;
+                        text-align: left;
+                    }
+
+                    p {
+                        color: #999999;
+                        margin-bottom: 20px;
+                        text-align: left;
+                    }
+                }
+
+                .Text_right {
+                    margin: 0px auto 0px 0px;
+
+                    .Buttons {
+                        width: 200px;
+                        height: 75px;
+                        border-radius: 10px;
+                        border: 2px solid #1F1F1F;
+                        display: flex;
+                        justify-content: center;
+                        padding: 10px;
+                        transition: all 0.4s ease-out;
+
+
+                        button.active {
+                            width: 120px;
+                            height: 55px;
+                            border: none;
+                            background-color: #1F1F1F;
+                            color: #FFFFFF;
+                            border-radius: 8px;
+                            cursor: pointer;
+                        }
+
+                        button {
+                            width: 90px;
+                            height: 55px;
+                            border: none;
+                            background-color: transparent;
+                            color: #FFFFFF;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            transition: all 0.25s ease-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        .Plans_boxes_monthly.active {
+            display: flex;
+        }
+
+        .Plans_boxes_yearly.active {
+            display: flex;
+        }
+
+        .Plans_boxes_monthly {
+            width: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 0px 20px;
+            transition: all 0.4s ease-out;
+            flex-wrap: wrap;
+
+            .Plan_box {
+                width: 45%;
+                padding: 25px;
+                gap: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                background-color: #262626;
+                border-radius: 12px;
+                transition: all 0.4s ease-out;
+
+                .Btns {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 40px;
+                    margin: 0px auto;
+
+                    button:first-child {
+                        padding: 12px 20px;
+                        background-color: #141414;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+
+                    button:last-child {
+                        padding: 12px 20px;
+                        background-color: #E50000;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+                }
+
+                h3 {
+                    color: #FFFFFF;
+                }
+
+                p {
+                    color: #999999;
+                }
+
+                .H2-p {
+                    display: flex;
+                    gap: 3px;
+
+                    h2 {
+                        color: #FFFFFF;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 300;
+                    }
+
+                    h6 {
+                        color: #999999;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 100;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+
+        .Plans_boxes_yearly {
+           width: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 0px 20px;
+            transition: all 0.4s ease-out;
+            flex-wrap: wrap;
+
+            .Plan_box {
+                width: 45%;
+                padding: 25px;
+                gap: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                background-color: #262626;
+                border-radius: 12px;
+                transition: all 0.4s ease-out;
+
+                .Btns {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 40px;
+                    margin: 0px auto;
+
+                    button:first-child {
+                        padding: 12px 20px;
+                        background-color: #141414;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+
+                    button:last-child {
+                        padding: 12px 20px;
+                        background-color: #E50000;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+                }
+
+                h3 {
+                    color: #FFFFFF;
+                }
+
+                p {
+                    color: #999999;
+                }
+
+                .H2-p {
+                    display: flex;
+                    gap: 3px;
+
+                    h2 {
+                        color: #FFFFFF;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 300;
+                    }
+
+                    h6 {
+                        color: #999999;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 100;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and ((min-width: 990px) and (max-width: 1200px)) {
+    .Plans_container {
+        width: 100%;
+
+        .Questions {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+
+            .Text {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                .Text_left {
+                    h1 {
+                        color: #FFFFFF;
+                        margin: 0px 0px 10px;
+                        text-align: left;
+                    }
+
+                    p {
+                        color: #999999;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .Text_right {
+                    margin: 0px auto 0px 0px;
+
+                    button {
+                        padding: 17px 35px;
+                        background-color: #E50000;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 17px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .Question_boxes {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+
+            .Boxes-1,
+            .Boxes-2 {
+                width: 45%;
+                gap: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .Box {
+                    width: 100%;
+
+
+                    .Box_linear {
+                        gap: 15px;
+                        align-items: start;
+                        justify-content: center;
+                        display: flex;
+                        padding-bottom: 25px;
+
+                        .Box_left {
+                            button {
+                                width: 50px;
+                                height: 50px;
+                                color: #FFFFFF;
+                                background-color: #262626;
+                                font-weight: 300;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 20px;
+                                border: none;
+                                border-radius: 10px;
+                            }
+                        }
+
+
+                        .Box_right {
+                            width: 555px;
+
+                            .H3-button {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 14px;
+
+                                h3 {
+                                    color: #FFFFFF;
+                                }
+
+                                button {
+                                    border: none;
+                                    background-color: transparent;
+                                    color: #FFFFFF;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            p {
+                                color: #999999;
+                                display: none;
+                            }
+
+                            p.active {
+                                display: flex;
+                                transition: all 0.4s ease-out;
+                            }
+
+                        }
+                    }
+
+                    .Accardion_line {
+                        width: 100%;
+                        height: 1px;
+                        background: linear-gradient(to right, transparent, transparent, #270606, #540606, #860303, #b20606, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #b20606, #860303, #540606, #270606, transparent, transparent, transparent, transparent);
+                    }
+                }
+            }
+        }
+
+        .Plan {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+
+            .Text {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .Text_left {
+                    h1 {
+                        color: #FFFFFF;
+                        margin: 0px 0px 10px 0px;
+                        text-align: left;
+                    }
+
+                    p {
+                        color: #999999;
+                        margin-bottom: 20px;
+                        text-align: left;
+                    }
+                }
+
+                .Text_right {
+                    margin: 0px auto 0px 0px;
+
+                    .Buttons {
+                        width: 200px;
+                        height: 75px;
+                        border-radius: 10px;
+                        border: 2px solid #1F1F1F;
+                        display: flex;
+                        justify-content: center;
+                        padding: 10px;
+                        transition: all 0.4s ease-out;
+
+
+                        button.active {
+                            width: 120px;
+                            height: 55px;
+                            border: none;
+                            background-color: #1F1F1F;
+                            color: #FFFFFF;
+                            border-radius: 8px;
+                            cursor: pointer;
+                        }
+
+                        button {
+                            width: 90px;
+                            height: 55px;
+                            border: none;
+                            background-color: transparent;
+                            color: #FFFFFF;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            transition: all 0.25s ease-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        .Plans_boxes_monthly.active {
+            display: flex;
+        }
+
+        .Plans_boxes_yearly.active {
+            display: flex;
+        }
+
+        .Plans_boxes_monthly {
+            width: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 0px 20px;
+            transition: all 0.4s ease-out;
+            flex-wrap: wrap;
+
+            .Plan_box {
+                width: 40%;
+                padding: 25px;
+                gap: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                background-color: #262626;
+                border-radius: 12px;
+                transition: all 0.4s ease-out;
+
+                .Btns {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 40px;
+                    margin: 0px auto;
+
+                    button:first-child {
+                        padding: 12px 20px;
+                        background-color: #141414;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+
+                    button:last-child {
+                        padding: 12px 20px;
+                        background-color: #E50000;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+                }
+
+                h3 {
+                    color: #FFFFFF;
+                }
+
+                p {
+                    color: #999999;
+                }
+
+                .H2-p {
+                    display: flex;
+                    gap: 3px;
+
+                    h2 {
+                        color: #FFFFFF;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 300;
+                    }
+
+                    h6 {
+                        color: #999999;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 100;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+
+        .Plans_boxes_yearly {
+            width: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 0px 20px;
+            transition: all 0.4s ease-out;
+            flex-wrap: wrap;
+
+            .Plan_box {
+                width: 40%;
+                padding: 25px;
+                gap: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                background-color: #262626;
+                border-radius: 12px;
+                transition: all 0.4s ease-out;
+
+                .Btns {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 40px;
+                    margin: 0px auto;
+
+                    button:first-child {
+                        padding: 12px 20px;
+                        background-color: #141414;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+
+                    button:last-child {
+                        padding: 12px 20px;
+                        background-color: #E50000;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+                }
+
+                h3 {
+                    color: #FFFFFF;
+                }
+
+                p {
+                    color: #999999;
+                }
+
+                .H2-p {
+                    display: flex;
+                    gap: 3px;
+
+                    h2 {
+                        color: #FFFFFF;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 300;
+                    }
+
+                    h6 {
+                        color: #999999;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 100;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+    }
+}

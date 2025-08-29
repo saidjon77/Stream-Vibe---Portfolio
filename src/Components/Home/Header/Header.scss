@@ -1,0 +1,403 @@
+.Header {
+    width: 100%;
+    margin-bottom: 50px;
+    height: 865px;
+
+    .fade_top {
+        position: absolute;
+        z-index: 100;
+    }
+
+    .fade_bottom {
+        position: absolute;
+        z-index: 100;
+        top: 282px;
+    }
+
+    .Movies {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        img {
+            width: 200px;
+            height: 250px;
+            margin: 0px 10px 10px 10px;
+            object-fit: cover;
+        }
+    }
+
+    .right {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .Info {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        right: 25%;
+        z-index: 200;
+        position: absolute;
+        top: 150px;
+
+        img {
+            width: 400px;
+            height: 400px;
+            margin: 0px auto;
+        }
+        h1 {
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        p {
+            color: #999999;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .img {
+            margin: 0px auto;
+            width: 100%;
+            border: 1px solid red;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 40%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    .Header {
+        width: 100%;
+        margin-bottom: 50px;
+
+        .fade_top {
+            position: absolute;
+            z-index: 100;
+        }
+
+        .fade_bottom {
+            position: absolute;
+            z-index: 100;
+            top: 220px;
+        }
+
+        .Movies {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            img {
+                width: 200px;
+                height: 250px;
+                margin: 0px 10px 10px 10px;
+                background-size: cover;
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .Info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            top: 120px;
+            right: 0;
+            position: absolute;
+            z-index: 200;
+            padding: 5px;
+
+            img {
+                width: 265px;
+                height: 265px;
+                margin: 0px auto;
+            }
+
+            h1 {
+                width: 100%;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 25px;
+            }
+
+            p {
+                color: #999999;
+                text-align: center;
+                font-size: 12px;
+            }
+
+            .img {
+                margin: 0px auto;
+                width: 100%;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and ((min-width: 520px) and (max-width: 769px)) {
+    .Header {
+        width: 100%;
+        margin-bottom: 50px;
+
+        .fade_top {
+            position: absolute;
+            z-index: 100;
+        }
+
+        .fade_bottom {
+            position: absolute;
+            z-index: 100;
+            top: 220px;
+        }
+
+        .Movies {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            img {
+                width: 200px;
+                height: 250px;
+                margin: 0px 10px 10px 10px;
+                background-size: cover;
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .Info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            top: 150px;
+            right: 0;
+            position: absolute;
+            z-index: 200;
+            padding: 5px;
+
+            img {
+                width: 305px;
+                height: 305px;
+                margin: 0px auto;
+            }
+
+            h1 {
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+            p {
+                color: #999999;
+                text-align: center;
+            }
+
+            .img {
+                margin: 0px auto;
+                width: 100%;
+                border: 1px solid red;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 40%;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and ((min-width: 769px) and (max-width: 990px)) {
+    .Header {
+        width: 100%;
+        margin-bottom: 50px;
+
+        .fade_top {
+            position: absolute;
+            z-index: 100;
+        }
+
+        .fade_bottom {
+            position: absolute;
+            z-index: 100;
+            top: 220px;
+        }
+
+        .Movies {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            img {
+                width: 200px;
+                height: 250px;
+                margin: 0px 10px 10px 10px;
+                background-size: cover;
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .Info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            top: 120px;
+            right: 0;
+            position: absolute;
+            z-index: 200;
+            padding: 15px;
+
+            img {
+                width: 320px;
+                height: 320px;
+                margin: 0px auto;
+            }
+
+            h1 {
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+            p {
+                color: #999999;
+                text-align: center;
+            }
+
+            .img {
+                margin: 0px auto;
+                width: 100%;
+                border: 1px solid red;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 40%;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and ((min-width: 990px) and (max-width: 1200px)) {
+    .Header {
+        width: 100%;
+        margin-bottom: 50px;
+
+        .fade_top {
+            position: absolute;
+            z-index: 100;
+        }
+
+        .fade_bottom {
+            position: absolute;
+            z-index: 100;
+            top: 220px;
+        }
+
+        .Movies {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            img {
+                width: 200px;
+                height: 250px;
+                margin: 0px 10px 10px 10px;
+                background-size: cover;
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .Info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            top: 70px;
+            right: 0;
+            position: absolute;
+            z-index: 200;
+
+            img {
+                width: 400px;
+                height: 400px;
+                margin: 0px auto;
+            }
+
+            h1 {
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+            p {
+                color: #999999;
+                text-align: center;
+                font-size: 12px;
+            }
+
+            .img {
+                margin: 0px auto;
+                width: 100%;
+                border: 1px solid red;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 40%;
+                }
+            }
+        }
+    }
+
+}

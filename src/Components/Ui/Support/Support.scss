@@ -1,0 +1,1558 @@
+.Support {
+    width: 100%;
+    padding: 50px 40px;
+    display: flex;
+    justify-content: space-between;
+
+    .Text_img {
+        width: 40%;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+
+        h1 {
+            color: #FFFFFF;
+        }
+
+        p {
+            color: #999999;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .Form {
+        background-color: #0f0f0f;
+        padding: 25px 40px;
+        border-radius: 20px;
+        border: 2px solid #1F1F1F;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .FirstName_LastName {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+
+            .FirstName {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                input {
+                    width: 350px;
+                    height: 55px;
+                    padding: 16px;
+                    background-color: #141414;
+                    color: #999999;
+                    border: 2px solid #1F1F1F;
+                    outline: none;
+                    border-radius: 8px;
+                    transition: all 0.25s ease-out;
+                }
+
+                input:hover {
+                    border: 2px solid #E50000;
+                }
+
+                input:focus {
+                    border: 2px solid #E50000;
+                }
+
+                label {
+                    color: #FFFFFF;
+                    font-weight: 500;
+                }
+            }
+
+            .LastName {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                input {
+                    width: 350px;
+                    height: 55px;
+                    padding: 16px;
+                    background-color: #141414;
+                    color: #999999;
+                    border: 2px solid #1F1F1F;
+                    outline: none;
+                    border-radius: 8px;
+                    transition: all 0.25s ease-out;
+                }
+
+                input:hover {
+                    border: 2px solid #E50000;
+                }
+
+                input:focus {
+                    border: 2px solid #E50000;
+                }
+
+                label {
+                    color: #FFFFFF;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .Email_Number {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+
+            .Email {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                input {
+                    width: 350px;
+                    height: 55px;
+                    padding: 16px;
+                    background-color: #141414;
+                    color: #999999;
+                    border: 2px solid #1F1F1F;
+                    outline: none;
+                    border-radius: 8px;
+                    transition: all 0.25s ease-out;
+                }
+
+                input:hover {
+                    border: 2px solid #E50000;
+                }
+
+                input:focus {
+                    border: 2px solid #E50000;
+                }
+
+                label {
+                    color: #FFFFFF;
+                    font-weight: 500;
+                }
+            }
+
+            .Number {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                input {
+                    width: 350px;
+                    height: 55px;
+                    padding: 16px;
+                    background-color: #141414;
+                    color: #999999;
+                    border: 2px solid #1F1F1F;
+                    outline: none;
+                    border-radius: 8px;
+                    transition: all 0.25s ease-out;
+                }
+
+                input:hover {
+                    border: 2px solid #E50000;
+                }
+
+                input:focus {
+                    border: 2px solid #E50000;
+                }
+
+                label {
+                    color: #FFFFFF;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .Massege {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            input {
+                width: 730px;
+                height: 130px;
+                padding: 16px 16px 92px 16px;
+                background-color: #141414;
+                color: #999999;
+                border: 2px solid #1F1F1F;
+                outline: none;
+                border-radius: 8px;
+                transition: all 0.25s ease-out;
+            }
+
+            input:hover {
+                border: 2px solid #E50000;
+            }
+
+            input:focus {
+                border: 2px solid #E50000;
+            }
+
+            label {
+                color: #FFFFFF;
+                font-weight: 500;
+            }
+        }
+
+        .Number {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            input {
+                width: 350px;
+                height: 55px;
+                padding: 16px;
+                background-color: #141414;
+                color: #999999;
+                border: 2px solid #1F1F1F;
+                outline: none;
+                border-radius: 8px;
+                transition: all 0.25s ease-out;
+            }
+
+            input:hover {
+                border: 2px solid #E50000;
+            }
+
+            input:focus {
+                border: 2px solid #E50000;
+            }
+
+            label {
+                color: #FFFFFF;
+                font-weight: 500;
+            }
+        }
+
+        .Check_button {
+            width: 730px;
+            display: flex;
+            justify-content: space-between;
+
+            .Check {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                .custom-checkbox {
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    width: 25px;
+                    height: 25px;
+                    background: #0F0F0F;
+                    border: 1px solid #1F1F1F;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    position: relative;
+                    transition: 0.3s;
+                }
+
+                .custom-checkbox:checked {
+                    background: #E50000;
+                    border: 1px solid #FFFFFF;
+                }
+
+                .custom-checkbox:checked::after {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                    width: 5px;
+                    height: 10px;
+                    border: solid #FFFFFF;
+                    border-width: 0 3px 3px 0;
+                }
+
+                label {
+                    color: #999999;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            .Button {
+
+                button {
+                    padding: 17px 35px;
+                    border: none;
+                    background-color: #E50000;
+                    border-radius: 8px;
+                    color: #FFFFFF;
+                    font-size: 13px;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:520px) {
+    .Support {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+
+        .Text_img {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+
+            h1 {
+                color: #FFFFFF;
+                font-size: 20px;
+                font-weight: 500;
+                text-align: center;
+            }
+
+            p {
+                color: #999999;
+                text-align: center;
+                font-size: 12px;
+            }
+
+            img {
+                display: none;
+            }
+        }
+
+        .Form {
+            width: 100%;
+            background-color: #0f0f0f;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid #1F1F1F;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .FirstName_LastName {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 30px;
+
+                .FirstName {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    input {
+                        width: 100%;
+                        height: 55px;
+                        padding: 16px;
+                        background-color: #141414;
+                        color: #999999;
+                        border: 2px solid #1F1F1F;
+                        outline: none;
+                        border-radius: 8px;
+                        transition: all 0.25s ease-out;
+                    }
+
+                    input:hover {
+                        border: 2px solid #E50000;
+                    }
+
+                    input:focus {
+                        border: 2px solid #E50000;
+                    }
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: 500;
+                    }
+                }
+
+                .LastName {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    input {
+                        width: 100%;
+                        height: 55px;
+                        padding: 16px;
+                        background-color: #141414;
+                        color: #999999;
+                        border: 2px solid #1F1F1F;
+                        outline: none;
+                        border-radius: 8px;
+                        transition: all 0.25s ease-out;
+                    }
+
+                    input:hover {
+                        border: 2px solid #E50000;
+                    }
+
+                    input:focus {
+                        border: 2px solid #E50000;
+                    }
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .Email_Number {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 30px;
+
+                .Email {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    input {
+                        width: 100%;
+                        height: 55px;
+                        padding: 16px;
+                        background-color: #141414;
+                        color: #999999;
+                        border: 2px solid #1F1F1F;
+                        outline: none;
+                        border-radius: 8px;
+                        transition: all 0.25s ease-out;
+                    }
+
+                    input:hover {
+                        border: 2px solid #E50000;
+                    }
+
+                    input:focus {
+                        border: 2px solid #E50000;
+                    }
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: 500;
+                    }
+                }
+
+                .Number {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    input {
+                        width: 100%;
+                        height: 55px;
+                        padding: 16px;
+                        background-color: #141414;
+                        color: #999999;
+                        border: 2px solid #1F1F1F;
+                        outline: none;
+                        border-radius: 8px;
+                        transition: all 0.25s ease-out;
+                    }
+
+                    input:hover {
+                        border: 2px solid #E50000;
+                    }
+
+                    input:focus {
+                        border: 2px solid #E50000;
+                    }
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .Massege {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                input {
+                    width: 100%;
+                    height: 130px;
+                    padding: 16px 16px 92px 16px;
+                    background-color: #141414;
+                    color: #999999;
+                    border: 2px solid #1F1F1F;
+                    outline: none;
+                    border-radius: 8px;
+                    transition: all 0.25s ease-out;
+                }
+
+                input:hover {
+                    border: 2px solid #E50000;
+                }
+
+                input:focus {
+                    border: 2px solid #E50000;
+                }
+
+                label {
+                    color: #FFFFFF;
+                    font-weight: 500;
+                }
+            }
+
+            .Number {
+                display: flex;
+                flex-direction: column;
+                flex-direction: column;
+                gap: 20px;
+
+                input {
+                    width: 100%;
+                    height: 55px;
+                    padding: 16px;
+                    background-color: #141414;
+                    color: #999999;
+                    border: 2px solid #1F1F1F;
+                    outline: none;
+                    border-radius: 8px;
+                    transition: all 0.25s ease-out;
+                }
+
+                input:hover {
+                    border: 2px solid #E50000;
+                }
+
+                input:focus {
+                    border: 2px solid #E50000;
+                }
+
+                label {
+                    color: #FFFFFF;
+                    font-weight: 500;
+                }
+            }
+
+            .Check_button {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column-reverse;
+                gap: 15px;
+
+                .Check {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    width: 100%;
+
+                    .custom-checkbox {
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        width: 25px;
+                        height: 25px;
+                        background: #0F0F0F;
+                        border: 1px solid #1F1F1F;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        position: relative;
+                        transition: 0.3s;
+                    }
+
+                    .custom-checkbox:checked {
+                        background: #E50000;
+                        border: 1px solid #FFFFFF;
+                    }
+
+                    .custom-checkbox:checked::after {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%) rotate(45deg);
+                        width: 5px;
+                        height: 10px;
+                        border: solid #FFFFFF;
+                        border-width: 0 3px 3px 0;
+                    }
+
+                    label {
+                        color: #999999;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 12px;
+                    }
+                }
+
+                .Button {
+
+                    button {
+                        padding: 17px 35px;
+                        border: none;
+                        background-color: #E50000;
+                        border-radius: 8px;
+                        color: #FFFFFF;
+                        font-size: 13px;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:520px) and (max-width:769px) {
+    .Support {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+
+        .Text_img {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+
+            h1 {
+                color: #FFFFFF;
+                font-size: 23px;
+                font-weight: 500;
+                text-align: center;
+            }
+
+            p {
+                color: #999999;
+                text-align: center;
+                font-size: 14px;
+            }
+
+            img {
+                display: none;
+            }
+        }
+
+        .Form {
+            width: 100%;
+            background-color: #0f0f0f;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid #1F1F1F;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .FirstName_LastName {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 30px;
+
+                .FirstName {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    input {
+                        width: 100%;
+                        height: 55px;
+                        padding: 16px;
+                        background-color: #141414;
+                        color: #999999;
+                        border: 2px solid #1F1F1F;
+                        outline: none;
+                        border-radius: 8px;
+                        transition: all 0.25s ease-out;
+                    }
+
+                    input:hover {
+                        border: 2px solid #E50000;
+                    }
+
+                    input:focus {
+                        border: 2px solid #E50000;
+                    }
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: 500;
+                    }
+                }
+
+                .LastName {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    input {
+                        width: 100%;
+                        height: 55px;
+                        padding: 16px;
+                        background-color: #141414;
+                        color: #999999;
+                        border: 2px solid #1F1F1F;
+                        outline: none;
+                        border-radius: 8px;
+                        transition: all 0.25s ease-out;
+                    }
+
+                    input:hover {
+                        border: 2px solid #E50000;
+                    }
+
+                    input:focus {
+                        border: 2px solid #E50000;
+                    }
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .Email_Number {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 30px;
+
+                .Email {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    input {
+                        width: 100%;
+                        height: 55px;
+                        padding: 16px;
+                        background-color: #141414;
+                        color: #999999;
+                        border: 2px solid #1F1F1F;
+                        outline: none;
+                        border-radius: 8px;
+                        transition: all 0.25s ease-out;
+                    }
+
+                    input:hover {
+                        border: 2px solid #E50000;
+                    }
+
+                    input:focus {
+                        border: 2px solid #E50000;
+                    }
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: 500;
+                    }
+                }
+
+                .Number {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    input {
+                        width: 100%;
+                        height: 55px;
+                        padding: 16px;
+                        background-color: #141414;
+                        color: #999999;
+                        border: 2px solid #1F1F1F;
+                        outline: none;
+                        border-radius: 8px;
+                        transition: all 0.25s ease-out;
+                    }
+
+                    input:hover {
+                        border: 2px solid #E50000;
+                    }
+
+                    input:focus {
+                        border: 2px solid #E50000;
+                    }
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .Massege {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                input {
+                    width: 100%;
+                    height: 130px;
+                    padding: 16px 16px 92px 16px;
+                    background-color: #141414;
+                    color: #999999;
+                    border: 2px solid #1F1F1F;
+                    outline: none;
+                    border-radius: 8px;
+                    transition: all 0.25s ease-out;
+                }
+
+                input:hover {
+                    border: 2px solid #E50000;
+                }
+
+                input:focus {
+                    border: 2px solid #E50000;
+                }
+
+                label {
+                    color: #FFFFFF;
+                    font-weight: 500;
+                }
+            }
+
+            .Number {
+                display: flex;
+                flex-direction: column;
+                flex-direction: column;
+                gap: 20px;
+
+                input {
+                    width: 100%;
+                    height: 55px;
+                    padding: 16px;
+                    background-color: #141414;
+                    color: #999999;
+                    border: 2px solid #1F1F1F;
+                    outline: none;
+                    border-radius: 8px;
+                    transition: all 0.25s ease-out;
+                }
+
+                input:hover {
+                    border: 2px solid #E50000;
+                }
+
+                input:focus {
+                    border: 2px solid #E50000;
+                }
+
+                label {
+                    color: #FFFFFF;
+                    font-weight: 500;
+                }
+            }
+
+            .Check_button {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .Check {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    width: 50%;
+
+                    .custom-checkbox {
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        width: 25px;
+                        height: 25px;
+                        background: #0F0F0F;
+                        border: 1px solid #1F1F1F;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        position: relative;
+                        transition: 0.3s;
+                    }
+
+                    .custom-checkbox:checked {
+                        background: #E50000;
+                        border: 1px solid #FFFFFF;
+                    }
+
+                    .custom-checkbox:checked::after {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%) rotate(45deg);
+                        width: 5px;
+                        height: 10px;
+                        border: solid #FFFFFF;
+                        border-width: 0 3px 3px 0;
+                    }
+
+                    label {
+                        color: #999999;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 12px;
+                    }
+                }
+
+                .Button {
+                    width: 50%;
+                    display: flex;
+                    justify-content: end;
+
+                    button {
+                        padding: 17px 35px;
+                        border: none;
+                        background-color: #E50000;
+                        border-radius: 8px;
+                        color: #FFFFFF;
+                        font-size: 13px;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:990px) {
+    .Support {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+
+        .Text_img {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+
+            h1 {
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+            p {
+                color: #999999;
+                text-align: center;
+            }
+
+            img {
+                display: none;
+            }
+        }
+
+        .Form {
+            width: 100%;
+            background-color: #0f0f0f;
+            padding: 20px;
+            border-radius: 20px;
+            border: 2px solid #1F1F1F;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .FirstName_LastName {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 30px;
+
+                .FirstName {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    input {
+                        width: 100%;
+                        height: 55px;
+                        padding: 16px;
+                        background-color: #141414;
+                        color: #999999;
+                        border: 2px solid #1F1F1F;
+                        outline: none;
+                        border-radius: 8px;
+                        transition: all 0.25s ease-out;
+                    }
+
+                    input:hover {
+                        border: 2px solid #E50000;
+                    }
+
+                    input:focus {
+                        border: 2px solid #E50000;
+                    }
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: 500;
+                    }
+                }
+
+                .LastName {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    input {
+                        width: 100%;
+                        height: 55px;
+                        padding: 16px;
+                        background-color: #141414;
+                        color: #999999;
+                        border: 2px solid #1F1F1F;
+                        outline: none;
+                        border-radius: 8px;
+                        transition: all 0.25s ease-out;
+                    }
+
+                    input:hover {
+                        border: 2px solid #E50000;
+                    }
+
+                    input:focus {
+                        border: 2px solid #E50000;
+                    }
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .Email_Number {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 30px;
+
+                .Email {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    input {
+                        width: 100%;
+                        height: 55px;
+                        padding: 16px;
+                        background-color: #141414;
+                        color: #999999;
+                        border: 2px solid #1F1F1F;
+                        outline: none;
+                        border-radius: 8px;
+                        transition: all 0.25s ease-out;
+                    }
+
+                    input:hover {
+                        border: 2px solid #E50000;
+                    }
+
+                    input:focus {
+                        border: 2px solid #E50000;
+                    }
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: 500;
+                    }
+                }
+
+                .Number {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    input {
+                        width: 100%;
+                        height: 55px;
+                        padding: 16px;
+                        background-color: #141414;
+                        color: #999999;
+                        border: 2px solid #1F1F1F;
+                        outline: none;
+                        border-radius: 8px;
+                        transition: all 0.25s ease-out;
+                    }
+
+                    input:hover {
+                        border: 2px solid #E50000;
+                    }
+
+                    input:focus {
+                        border: 2px solid #E50000;
+                    }
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .Massege {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                input {
+                    width: 100%;
+                    height: 130px;
+                    padding: 16px 16px 92px 16px;
+                    background-color: #141414;
+                    color: #999999;
+                    border: 2px solid #1F1F1F;
+                    outline: none;
+                    border-radius: 8px;
+                    transition: all 0.25s ease-out;
+                }
+
+                input:hover {
+                    border: 2px solid #E50000;
+                }
+
+                input:focus {
+                    border: 2px solid #E50000;
+                }
+
+                label {
+                    color: #FFFFFF;
+                    font-weight: 500;
+                }
+            }
+
+            .Number {
+                display: flex;
+                flex-direction: column;
+                flex-direction: column;
+                gap: 20px;
+
+                input {
+                    width: 100%;
+                    height: 55px;
+                    padding: 16px;
+                    background-color: #141414;
+                    color: #999999;
+                    border: 2px solid #1F1F1F;
+                    outline: none;
+                    border-radius: 8px;
+                    transition: all 0.25s ease-out;
+                }
+
+                input:hover {
+                    border: 2px solid #E50000;
+                }
+
+                input:focus {
+                    border: 2px solid #E50000;
+                }
+
+                label {
+                    color: #FFFFFF;
+                    font-weight: 500;
+                }
+            }
+
+            .Check_button {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .Check {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    width: 50%;
+
+                    .custom-checkbox {
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        width: 25px;
+                        height: 25px;
+                        background: #0F0F0F;
+                        border: 1px solid #1F1F1F;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        position: relative;
+                        transition: 0.3s;
+                    }
+
+                    .custom-checkbox:checked {
+                        background: #E50000;
+                        border: 1px solid #FFFFFF;
+                    }
+
+                    .custom-checkbox:checked::after {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%) rotate(45deg);
+                        width: 5px;
+                        height: 10px;
+                        border: solid #FFFFFF;
+                        border-width: 0 3px 3px 0;
+                    }
+
+                    label {
+                        color: #999999;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 12px;
+                    }
+                }
+
+                .Button {
+                    width: 50%;
+                    display: flex;
+                    justify-content: end;
+
+                    button {
+                        padding: 17px 35px;
+                        border: none;
+                        background-color: #E50000;
+                        border-radius: 8px;
+                        color: #FFFFFF;
+                        font-size: 13px;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+    .Support {
+        width: 100%;
+        padding: 50px 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .Text_img {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+
+            h1 {
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+            p {
+                color: #999999;
+                text-align: center;
+            }
+
+            img {
+                width: 100%;
+                display: none;
+            }
+        }
+
+        .Form {
+            background-color: #0f0f0f;
+            padding: 25px 40px;
+            border-radius: 20px;
+            border: 2px solid #1F1F1F;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            .FirstName_LastName {
+                display: flex;
+                justify-content: space-between;
+                gap: 30px;
+
+                .FirstName {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    input {
+                        width: 350px;
+                        height: 55px;
+                        padding: 16px;
+                        background-color: #141414;
+                        color: #999999;
+                        border: 2px solid #1F1F1F;
+                        outline: none;
+                        border-radius: 8px;
+                        transition: all 0.25s ease-out;
+                    }
+
+                    input:hover {
+                        border: 2px solid #E50000;
+                    }
+
+                    input:focus {
+                        border: 2px solid #E50000;
+                    }
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: 500;
+                    }
+                }
+
+                .LastName {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    input {
+                        width: 350px;
+                        height: 55px;
+                        padding: 16px;
+                        background-color: #141414;
+                        color: #999999;
+                        border: 2px solid #1F1F1F;
+                        outline: none;
+                        border-radius: 8px;
+                        transition: all 0.25s ease-out;
+                    }
+
+                    input:hover {
+                        border: 2px solid #E50000;
+                    }
+
+                    input:focus {
+                        border: 2px solid #E50000;
+                    }
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .Email_Number {
+                display: flex;
+                justify-content: space-between;
+                gap: 30px;
+
+                .Email {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    input {
+                        width: 350px;
+                        height: 55px;
+                        padding: 16px;
+                        background-color: #141414;
+                        color: #999999;
+                        border: 2px solid #1F1F1F;
+                        outline: none;
+                        border-radius: 8px;
+                        transition: all 0.25s ease-out;
+                    }
+
+                    input:hover {
+                        border: 2px solid #E50000;
+                    }
+
+                    input:focus {
+                        border: 2px solid #E50000;
+                    }
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: 500;
+                    }
+                }
+
+                .Number {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    input {
+                        width: 350px;
+                        height: 55px;
+                        padding: 16px;
+                        background-color: #141414;
+                        color: #999999;
+                        border: 2px solid #1F1F1F;
+                        outline: none;
+                        border-radius: 8px;
+                        transition: all 0.25s ease-out;
+                    }
+
+                    input:hover {
+                        border: 2px solid #E50000;
+                    }
+
+                    input:focus {
+                        border: 2px solid #E50000;
+                    }
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .Massege {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                input {
+                    width: 100%;
+                    height: 130px;
+                    padding: 16px 16px 92px 16px;
+                    background-color: #141414;
+                    color: #999999;
+                    border: 2px solid #1F1F1F;
+                    outline: none;
+                    border-radius: 8px;
+                    transition: all 0.25s ease-out;
+                }
+
+                input:hover {
+                    border: 2px solid #E50000;
+                }
+
+                input:focus {
+                    border: 2px solid #E50000;
+                }
+
+                label {
+                    color: #FFFFFF;
+                    font-weight: 500;
+                }
+            }
+
+            .Number {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                input {
+                    width: 350px;
+                    height: 55px;
+                    padding: 16px;
+                    background-color: #141414;
+                    color: #999999;
+                    border: 2px solid #1F1F1F;
+                    outline: none;
+                    border-radius: 8px;
+                    transition: all 0.25s ease-out;
+                }
+
+                input:hover {
+                    border: 2px solid #E50000;
+                }
+
+                input:focus {
+                    border: 2px solid #E50000;
+                }
+
+                label {
+                    color: #FFFFFF;
+                    font-weight: 500;
+                }
+            }
+
+            .Check_button {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .Check {
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+                    .custom-checkbox {
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        width: 25px;
+                        height: 25px;
+                        background: #0F0F0F;
+                        border: 1px solid #1F1F1F;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        position: relative;
+                        transition: 0.3s;
+                    }
+
+                    .custom-checkbox:checked {
+                        background: #E50000;
+                        border: 1px solid #FFFFFF;
+                    }
+
+                    .custom-checkbox:checked::after {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%) rotate(45deg);
+                        width: 5px;
+                        height: 10px;
+                        border: solid #FFFFFF;
+                        border-width: 0 3px 3px 0;
+                    }
+
+                    label {
+                        color: #999999;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+
+                .Button {
+                    width: 50%;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    button {
+                        padding: 17px 35px;
+                        border: none;
+                        background-color: #E50000;
+                        border-radius: 8px;
+                        color: #FFFFFF;
+                        font-size: 13px;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

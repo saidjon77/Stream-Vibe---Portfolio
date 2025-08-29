@@ -1,0 +1,689 @@
+.Question {
+    width: 100%;
+
+    .Questions {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 30px;
+
+        .Text {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 10px;
+
+            .Text_left {
+                h1 {
+                    color: #FFFFFF;
+                    margin: 0px 0px 10px;
+                    text-align: left;
+                }
+
+                p {
+                    color: #999999;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .Text_right {
+
+                button {
+                    padding: 17px 35px;
+                    background-color: #E50000;
+                    border: none;
+                    color: #FFFFFF;
+                    border-radius: 8px;
+                    font-size: 17px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .Question_boxes {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .Boxes-1,
+        .Boxes-2 {
+            width: 50%;
+            gap: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .Box {
+                width: 100%;
+
+
+                .Box_linear {
+                    gap: 15px;
+                    align-items: start;
+                    justify-content: center;
+                    display: flex;
+                    padding-bottom: 25px;
+
+                    .Box_left {
+                        button {
+                            width: 50px;
+                            height: 50px;
+                            color: #FFFFFF;
+                            background-color: #262626;
+                            font-weight: 300;
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 20px;
+                            border: none;
+                            border-radius: 10px;
+                        }
+                    }
+
+
+                    .Box_right {
+                        width: 555px;
+
+                        .H3-button {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-bottom: 14px;
+
+                            h3 {
+                                color: #FFFFFF;
+                            }
+
+                            button {
+                                border: none;
+                                background-color: transparent;
+                                color: #FFFFFF;
+                                cursor: pointer;
+                            }
+                        }
+
+                        p {
+                            color: #999999;
+                            display: none;
+                        }
+
+                        p.active {
+                            display: flex;
+                            transition: all 0.4s ease-out;
+                        }
+
+                    }
+                }
+
+                .Accardion_line {
+                    width: 100%;
+                    height: 1px;
+                    background: linear-gradient(to right, transparent, transparent, #270606, #540606, #860303, #b20606, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #b20606, #860303, #540606, #270606, transparent, transparent, transparent, transparent);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .Question {
+        width: 100%;
+
+        .Questions {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 20px;
+
+            .Text {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: start;
+                padding: 0;
+                
+                .Text_left {
+                    width: 100%;
+
+                    h1 {
+                        color: #FFFFFF;
+                        margin: 0px 0px 10px;
+                        text-align: left;
+                        font-size: 25px;
+                    }
+
+                    p {
+                        color: #999999;
+                        margin-bottom: 20px;
+                        font-size: 13px;
+                    }
+                }
+
+                .Text_right {
+                    width: 100%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+
+                    button {
+                        padding: 12px 25px;
+                        background-color: #E50000;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 15px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .Question_boxes {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+
+            .Boxes-1,
+            .Boxes-2 {
+                width: 100%;
+                gap: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .Box {
+                    width: 100%;
+
+
+                    .Box_linear {
+                        gap: 15px;
+                        align-items: start;
+                        justify-content: center;
+                        display: flex;
+                        padding-bottom: 25px;
+
+                        .Box_left {
+                            button {
+                                width: 50px;
+                                height: 50px;
+                                color: #FFFFFF;
+                                background-color: #262626;
+                                font-weight: 300;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 20px;
+                                border: none;
+                                border-radius: 10px;
+                            }
+                        }
+
+
+                        .Box_right {
+                            width: 555px;
+
+                            .H3-button {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 14px;
+
+                                h3 {
+                                    color: #FFFFFF;
+                                }
+
+                                button {
+                                    border: none;
+                                    background-color: transparent;
+                                    color: #FFFFFF;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            p {
+                                color: #999999;
+                                display: none;
+                            }
+
+                            p.active {
+                                display: flex;
+                                transition: all 0.4s ease-out;
+                            }
+
+                        }
+                    }
+
+                    .Accardion_line {
+                        width: 100%;
+                        height: 1px;
+                        background: linear-gradient(to right, transparent, transparent, #270606, #540606, #860303, #b20606, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #b20606, #860303, #540606, #270606, transparent, transparent, transparent, transparent);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and ((min-width: 520px) and (max-width: 769px)) {
+    .Question {
+        width: 100%;
+
+        .Questions {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+
+            .Text {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                .Text_left {
+                    width: 100%;
+
+                    h1 {
+                        color: #FFFFFF;
+                        margin: 0px 0px 10px;
+                        text-align: left;
+                    }
+
+                    p {
+                        color: #999999;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .Text_right {
+                    width: 100%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+
+                    button {
+                        padding: 17px 35px;
+                        background-color: #E50000;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 15px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .Question_boxes {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+
+            .Boxes-1,
+            .Boxes-2 {
+                width: 100%;
+                gap: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .Box {
+                    width: 100%;
+
+
+                    .Box_linear {
+                        gap: 15px;
+                        align-items: start;
+                        justify-content: center;
+                        display: flex;
+                        padding-bottom: 25px;
+
+                        .Box_left {
+                            button {
+                                width: 50px;
+                                height: 50px;
+                                color: #FFFFFF;
+                                background-color: #262626;
+                                font-weight: 300;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 20px;
+                                border: none;
+                                border-radius: 10px;
+                            }
+                        }
+
+
+                        .Box_right {
+                            width: 555px;
+
+                            .H3-button {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 14px;
+
+                                h3 {
+                                    color: #FFFFFF;
+                                }
+
+                                button {
+                                    border: none;
+                                    background-color: transparent;
+                                    color: #FFFFFF;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            p {
+                                color: #999999;
+                                display: none;
+                            }
+
+                            p.active {
+                                display: flex;
+                                transition: all 0.4s ease-out;
+                            }
+
+                        }
+                    }
+
+                    .Accardion_line {
+                        width: 100%;
+                        height: 1px;
+                        background: linear-gradient(to right, transparent, transparent, #270606, #540606, #860303, #b20606, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #b20606, #860303, #540606, #270606, transparent, transparent, transparent, transparent);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and ((min-width: 769px) and (max-width: 990px)) {
+    .Question {
+        width: 100%;
+
+        .Questions {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+
+            .Text {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                .Text_left {
+                    width: 100%;
+
+                    h1 {
+                        color: #FFFFFF;
+                        margin: 0px 0px 10px;
+                        text-align: left;
+                    }
+
+                    p {
+                        color: #999999;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .Text_right {
+                    width: 100%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+
+                    button {
+                        padding: 17px 35px;
+                        background-color: #E50000;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 17px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .Question_boxes {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+
+            .Boxes-1,
+            .Boxes-2 {
+                width: 100%;
+                gap: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .Box {
+                    width: 100%;
+
+
+                    .Box_linear {
+                        gap: 15px;
+                        align-items: start;
+                        justify-content: center;
+                        display: flex;
+                        padding-bottom: 25px;
+
+                        .Box_left {
+                            button {
+                                width: 50px;
+                                height: 50px;
+                                color: #FFFFFF;
+                                background-color: #262626;
+                                font-weight: 300;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 20px;
+                                border: none;
+                                border-radius: 10px;
+                            }
+                        }
+
+
+                        .Box_right {
+                            width: 555px;
+
+                            .H3-button {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 14px;
+
+                                h3 {
+                                    color: #FFFFFF;
+                                }
+
+                                button {
+                                    border: none;
+                                    background-color: transparent;
+                                    color: #FFFFFF;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            p {
+                                color: #999999;
+                                display: none;
+                            }
+
+                            p.active {
+                                display: flex;
+                                transition: all 0.4s ease-out;
+                            }
+
+                        }
+                    }
+
+                    .Accardion_line {
+                        width: 100%;
+                        height: 1px;
+                        background: linear-gradient(to right, transparent, transparent, #270606, #540606, #860303, #b20606, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #b20606, #860303, #540606, #270606, transparent, transparent, transparent, transparent);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and ((min-width: 990px) and (max-width: 1200px)) {
+    .Question {
+        width: 100%;
+
+        .Questions {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .Text {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                .Text_left {
+                    width: 100%;
+
+                    h1 {
+                        color: #FFFFFF;
+                        margin: 0px 0px 10px;
+                        text-align: left;
+                    }
+
+                    p {
+                        color: #999999;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .Text_right {
+                    width: 100%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+
+                    button {
+                        padding: 17px 35px;
+                        background-color: #E50000;
+                        border: none;
+                        color: #FFFFFF;
+                        border-radius: 8px;
+                        font-size: 17px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .Question_boxes {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+
+            .Boxes-1,
+            .Boxes-2 {
+                width: 45%;
+                gap: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .Box {
+                    width: 100%;
+
+
+                    .Box_linear {
+                        gap: 15px;
+                        align-items: start;
+                        justify-content: center;
+                        display: flex;
+                        padding-bottom: 25px;
+
+                        .Box_left {
+                            button {
+                                width: 50px;
+                                height: 50px;
+                                color: #FFFFFF;
+                                background-color: #262626;
+                                font-weight: 300;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 20px;
+                                border: none;
+                                border-radius: 10px;
+                            }
+                        }
+
+
+                        .Box_right {
+                            width: 555px;
+
+                            .H3-button {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 14px;
+
+                                h3 {
+                                    color: #FFFFFF;
+                                }
+
+                                button {
+                                    border: none;
+                                    background-color: transparent;
+                                    color: #FFFFFF;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            p {
+                                color: #999999;
+                                display: none;
+                            }
+
+                            p.active {
+                                display: flex;
+                                transition: all 0.4s ease-out;
+                            }
+
+                        }
+                    }
+
+                    .Accardion_line {
+                        width: 100%;
+                        height: 1px;
+                        background: linear-gradient(to right, transparent, transparent, #270606, #540606, #860303, #b20606, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #E50000, #b20606, #860303, #540606, #270606, transparent, transparent, transparent, transparent);
+                    }
+                }
+            }
+        }
+    }
+}

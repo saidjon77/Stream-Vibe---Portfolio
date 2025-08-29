@@ -1,0 +1,290 @@
+.Actor {
+    width: 100%;
+    padding: 50px 40px 20px 40px;
+    display: flex;
+    gap: 30px;
+
+    .Img_text {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 100px;
+
+        .Images {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            img {
+                width: 300px;
+                height: 450px;
+                object-fit: cover;
+                background-size: cover;
+                border-radius: 10px;
+            }
+        }
+
+        .Texts {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 20px;
+
+            h1 {
+                color: #FFFFFF;
+                font-weight: 500;
+            }
+
+            h4 {
+                color: #999999;
+                font-weight: 100;
+            }
+
+            p {
+                color: #FFFFFF;
+                font-weight: 100;
+                font-size: 19px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    .Actor {
+        width: 100%;
+        padding: 30px 20px;
+        display: flex;
+        gap: 30px;
+
+        .Img_text {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            gap: 20px;
+
+            .Images {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                img {
+                    width: 280px;
+                    height: 450px;
+                    object-fit: cover;
+                    background-size: cover;
+                    border-radius: 10px;
+                }
+            }
+
+            .Texts {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                gap: 20px;
+                margin: 0 auto;
+
+                h1 {
+                    color: #FFFFFF;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+
+                h4 {
+                    color: #999999;
+                    font-weight: 100;
+                    font-size: 15px;
+                }
+
+                p {
+                    color: #FFFFFF;
+                    font-weight: 100;
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
+@media screen and (min-width: 520px) and (max-width: 769px) {
+    .Actor {
+        width: 100%;
+        padding: 30px 20px;
+        display: flex;
+        gap: 30px;
+
+        .Img_text {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            gap: 20px;
+
+            .Images {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                img {
+                    width: 350px;
+                    height: 450px;
+                    object-fit: cover;
+                    background-size: cover;
+                    border-radius: 10px;
+                }
+            }
+
+            .Texts {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                gap: 20px;
+                margin: 0 auto;
+
+                h1 {
+                    color: #FFFFFF;
+                    font-weight: 500;
+                    font-size: 25px;
+                }
+
+                h4 {
+                    color: #999999;
+                    font-weight: 100;
+                    font-size: 15px;
+                }
+
+                p {
+                    color: #FFFFFF;
+                    font-weight: 100;
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
+@media screen and (min-width: 769px) and (max-width: 990px) {
+    .Actor {
+        width: 100%;
+        padding: 30px 20px;
+        display: flex;
+        gap: 30px;
+
+        .Img_text {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            gap: 50px;
+
+            .Images {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+
+                img {
+                    width: 350px;
+                    height: 450px;
+                    object-fit: cover;
+                    background-size: cover;
+                    border-radius: 10px;
+                }
+            }
+
+            .Texts {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                gap: 10px;
+
+                h1 {
+                    color: #FFFFFF;
+                    font-weight: 500;
+                    font-size: 35px;
+                }
+
+                h4 {
+                    color: #999999;
+                    font-weight: 100;
+                }
+
+                p {
+                    color: #FFFFFF;
+                    font-weight: 100;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+}
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+    .Actor {
+    width: 100%;
+    padding: 50px 20px 20px 20px;
+    display: flex;
+    gap: 30px;
+
+    .Img_text {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 20px;
+
+        .Images {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            img {
+                width: 350px;
+                height: 450px;
+                object-fit: cover;
+                background-size: cover;
+                border-radius: 10px;
+            }
+        }
+
+        .Texts {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 20px;
+
+            h1 {
+                color: #FFFFFF;
+                font-weight: 500;
+                font-size: 35px;
+            }
+
+            h4 {
+                color: #999999;
+                font-weight: 100;
+            }
+
+            p {
+                color: #FFFFFF;
+                font-weight: 100;
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+}

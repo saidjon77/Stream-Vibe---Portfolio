@@ -1,0 +1,448 @@
+.Navbar.scrolled {
+    background: rgba(26, 26, 26, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.Navbar {
+    width: 1536px;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+    button {
+        display: none;
+    }
+
+    .Navbar_left {
+
+        .img {
+            width: 200px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .Navbar_center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0F0F0F;
+            border-radius: 12px;
+            padding: 10px;
+            border: 5px solid #1F1F1F;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 25px;
+
+                li a.active {
+                    color: #FFFFFF;
+                    background-color: #1A1A1A;
+                    display: flex;
+                    padding: 0px 25px 5px 25px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                li{
+                    transition: all 0.25s ease-out;
+                    height: 55px;
+                    color: #BFBFBF;
+                    background-color: transparent;
+                    border-radius: 8px;
+                    display: flex;
+                    padding: 0px 0px;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+                li a {
+                    transition: all 0.25s ease-out;
+                    height: 55px;
+                    color: #BFBFBF;
+                    background-color: transparent;
+                    border-radius: 8px;
+                    display: flex;
+                    padding: 0px 0px;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+
+                .LogoutButton a{
+                    color: #FFFFFF;
+                    background-color: #E50000;
+                    display: flex;
+                    padding: 0px 25px 0px 25px;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all 0.25s ease-out;
+                }
+                .LogoutButton.none{
+                    color: #FFFFFF;
+                    background-color: #E50000;
+                    display: none;
+                    padding: 0px 25px 0px 25px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .SignInButton{
+                    color: #FFFFFF;
+                    background-color: #1A1A1A;
+                    display: none;
+                    padding: 0px 25px 0px 25px;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all 0.25s ease-out;
+                }
+                .SignInButton.active{
+                    display: flex;
+                    color: #FFFFFF;
+                    background-color: #1A1A1A;
+                    padding: 0px 25px 0px 25px;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .Navbar_right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+
+        .img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+
+            .SearchIcon{
+                cursor: pointer;
+                width: 25%; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    width: 100%;
+                }
+            }
+            img {
+                width: 25%;
+                cursor: pointer;
+            }
+
+        }
+    }
+}
+
+.NavbarPlaceholder {
+    height: 80px; // Navbar balandligiga teng
+}
+
+
+
+@media screen and (max-width: 520px) {
+    .Navbar.scrolled {
+        background: rgba(26, 26, 26, 0.7);
+        backdrop-filter: blur(5px);
+    }
+
+    .Navbar {
+        width: 100%;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        background: transparent;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+
+        button {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            border: 3px solid #262626;
+            background-color: #1A1A1A;
+            padding: 12px;
+            color: #FFFFFF;
+            font-size: 20px;
+        }
+
+        .Navbar_left {
+
+            .img {
+                width: 190px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .Navbar_center {
+            display: none;
+        }
+
+        .Navbar_right {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+
+            .img {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+
+                img {
+                    width: 25%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .NavbarPlaceholder {
+        height: 80px; // Navbar balandligiga teng
+    }
+
+}
+
+@media screen and (min-width: 520px) and (max-width: 769px) {
+    .Navbar.scrolled {
+        background: rgba(26, 26, 26, 0.7);
+        backdrop-filter: blur(5px);
+    }
+
+    .Navbar {
+        width: 100%;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        background: transparent;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+
+        button {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            border: 3px solid #262626;
+            background-color: #1A1A1A;
+            padding: 12px;
+            color: #FFFFFF;
+            font-size: 20px;
+        }
+
+        .Navbar_left {
+
+            .img {
+                width: 190px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .Navbar_center {
+            display: none;
+        }
+
+        .Navbar_right {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+
+            .img {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+
+                img {
+                    width: 25%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .NavbarPlaceholder {
+        height: 80px; // Navbar balandligiga teng
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 990px) {
+    .Navbar.scrolled {
+        background: rgba(26, 26, 26, 0.7);
+        backdrop-filter: blur(5px);
+    }
+
+    .Navbar {
+        width: 100%;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        background: transparent;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+
+        button {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            border: 3px solid #262626;
+            background-color: #1A1A1A;
+            padding: 12px;
+            color: #FFFFFF;
+            font-size: 20px;
+        }
+
+        .Navbar_left {
+
+            .img {
+                width: 190px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .Navbar_center {
+            display: none;
+        }
+
+        .Navbar_right {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+
+            .img {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+
+                img {
+                    width: 25%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+    .Navbar.scrolled {
+        background: rgba(26, 26, 26, 0.7);
+        backdrop-filter: blur(5px);
+    }
+
+    .Navbar {
+        width: 100%;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        background: transparent;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+
+        button {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            border: 3px solid #262626;
+            background-color: #1A1A1A;
+            padding: 12px;
+            color: #FFFFFF;
+            font-size: 20px;
+        }
+
+        .Navbar_left {
+
+            .img {
+                width: 190px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .Navbar_center {
+            display: none;
+        }
+
+        .Navbar_right {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+
+            .img {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+
+                img {
+                    width: 25%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .NavbarPlaceholder {
+        height: 80px; // Navbar balandligiga teng
+    }
+
+}
