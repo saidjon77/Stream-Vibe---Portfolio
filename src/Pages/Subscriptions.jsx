@@ -1,5 +1,5 @@
 import React from 'react'
-import Plan from '../Components/Ui/Plan/PLan'
+import Plan from '../Components/Plan/PLan'
 
 
 const Subscriptions = () => {

@@ -2,30 +2,42 @@ import React from "react";
 import "./Header.scss";
 import { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
+import Api_Service from "../../../Service/api_service";
 const Header = () => {
-  const API_KEY =
-    "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NDEyNDQ5ZjVhNTZlYTUzZjUzZmUxMjkwMGY5YzNmZiIsIm5iZiI6MTc1NTc3MjE5Mi4zMjgsInN1YiI6IjY4YTZmNTIwMzJjZGE4ZjBhZmZkMmIxNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.SsDHR4-ntrALqEmc0oXyab4WYpit5NyoRIW6kJPiKgw";
-  const BASE_URL = "https://api.themoviedb.org/3";
   const IMG_BASE = "https://image.tmdb.org/t/p/w500";
 
   const [movies, setMovies] = useState([]);
-  
+
+  const url = [
+    "movie/popular",
+    "movie/now_playing",
+    "movie/top_rated",
+    "movie/upcoming",
+    "trending/movie/week",
+    "trending/tv/week",
+    "trending/movie/week",
+    "trending/all/week",
+    "discover/movie",
+    "discover/tv",
+    "movie/popular"
+]
+const [trending, setTrending] = useState(Math.floor(Math.random() * url.length));
+
+console.log(url[trending]);
+
+
+  const GetApi = async () => {
+    let responce = await Api_Service.getData(url[trending]);
+    setMovies(responce.results);
+  };
+
   useEffect(() => {
-    fetch(
-      `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=en-US&page=1&include_adult=false`,
-      {
-        headers: {
-          Authorization: `Bearer ${API_KEY}`,
-          accept: "application/json",
-        },
-      }
-    )
-      .then((res) => res.json())
-      .then((data) => setMovies(data.results));
+    GetApi();
   }, []);
+
   return (
     <div className="Header">
-      <img src="images/Fade Out Top.png" alt=""  className="fade_top"/>
+      <img src="images/Fade Out Top.png" alt="" className="fade_top" />
       <Marquee direction="right" gradient={false} speed={50}>
         {[...movies].reverse().map((movie) => (
           <div className="Movies">
@@ -54,7 +66,7 @@ const Header = () => {
         ))}
       </Marquee>
       <div className="Info">
-        <img src="images/Abstract Design.png" alt="" />
+        <img src="images/Abstract Design.png" alt=""/>
         <h1>The Best Streaming Experience</h1>
         <p>
           StreamVibe is the best streaming experience for watching your favorite
@@ -63,7 +75,7 @@ const Header = () => {
           blockbusters, classic movies, popular TV shows, and more.
         </p>
       </div>
-      <img src="images/Fade Out Bottom.png" alt="" className="fade_bottom"/>
+      <img src="images/Fade Out Bottom.png" alt="" className="fade_bottom" />
     </div>
   );
 };

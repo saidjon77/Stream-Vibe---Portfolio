@@ -4,36 +4,24 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./Slider.scss";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, use } from "react";
 import { NavLink } from "react-router-dom";
+import api_service from "../../../Service/api_service";
 
-const Slider = ({ uniqueId }) => {
-  const API_KEY =
-    "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NDEyNDQ5ZjVhNTZlYTUzZjUzZmUxMjkwMGY5YzNmZiIsIm5iZiI6MTc1NTc3MjE5Mi4zMjgsInN1YiI6IjY4YTZmNTIwMzJjZGE4ZjBhZmZkMmIxNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.SsDHR4-ntrALqEmc0oXyab4WYpit5NyoRIW6kJPiKgw";
-  const BASE_URL = "https://api.themoviedb.org/3";
-  const IMG_BASE = "https://image.tmdb.org/t/p/w500";
-
+const Slider = ({title, description, url, uniqueId }) => {
   const [movies, setMovies] = useState([]);
-
-  // 🔗 navigation tugmalar uchun ref
   const prevRef = useRef(null);
   const nextRef = useRef(null);
-  // Fetch movies
+
+  const GetApi = async () => {
+    let responce = await api_service.getData(url);
+    setMovies(responce.results);
+  };
+
   useEffect(() => {
-    fetch(
-      `${BASE_URL}/movie/popular?language=en-US&page=1&include_adult=false`,
-      {
-        headers: {
-          Authorization: `Bearer ${API_KEY}`,
-          accept: "application/json",
-        },
-      }
-    )
-      .then((res) => res.json())
-      .then((data) => setMovies(data.results || []));
+    GetApi();
   }, []);
 
-  // Filmlarni bo‘lish (har bir slide = 5 ta film)
   const chunkedMovies = [];
   for (let i = 0; i < movies.length; i += 5) {
     chunkedMovies.push(movies.slice(i, i + 5));
@@ -44,11 +32,8 @@ const Slider = ({ uniqueId }) => {
       {/* Header */}
       <div className="slider-header">
         <div className="text-block">
-          <h1>Explore our wide variety of categories</h1>
-          <p>
-            Whether you’re looking for a comedy to make you laugh, a drama to
-            make you think, or a documentary to learn something new
-          </p>
+          <h1>{title}</h1>
+          <p>{description}</p>
         </div>
 
         {/* Controls */}
@@ -81,7 +66,6 @@ const Slider = ({ uniqueId }) => {
           el: `.swiper-pagination-${uniqueId}`,
           clickable: true,
         }}
-        // ✅ Tugmalarni to‘g‘ri ulash
         onBeforeInit={(swiper) => {
           swiper.params.navigation.prevEl = prevRef.current;
           swiper.params.navigation.nextEl = nextRef.current;
@@ -135,17 +119,17 @@ const Slider = ({ uniqueId }) => {
               {group.reverse().map((movie) => (
                 <div className="card" key={movie.id}>
                   <NavLink to={`/movie`}>
-                  <img
-                    src={`${IMG_BASE}${movie.poster_path}`}
-                    alt={movie.title}
-                  />
+                    <img
+                      src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                      alt={movie.title}
+                    />
                     <img
                       className="fade"
                       src="images/Fade Out Bottom (1).png"
                       alt=""
                     />
                   </NavLink>
-                  <h3>{movie.title.slice(0, 10)}</h3>
+                  <h3>{movie.name}</h3>
                 </div>
               ))}
             </div>

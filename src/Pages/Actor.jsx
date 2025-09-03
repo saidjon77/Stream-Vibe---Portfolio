@@ -1,5 +1,5 @@
 import React from 'react'
-import Actor from '../Components/Ui/Actor/Actor'
+import Actor from '../Components/Actor/Actor'
 
 const ActorPage = () => {
   return (

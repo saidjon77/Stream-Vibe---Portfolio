@@ -1,6 +1,6 @@
 import React from 'react'
-import Support from '../Components/Ui/Support/Support'
-import Question from '../Components/Ui/Question/Question'
+import Support from '../Components/Support/Support'
+import Question from '../Components/Question/Question'
 
 const SupportPage = () => {
   return (

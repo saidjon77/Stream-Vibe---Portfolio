@@ -48,6 +48,10 @@
             width: 400px;
             height: 400px;
             margin: 0px auto;
+            transition: all 0.4s ease-out;
+        }
+        img.active{
+            transform: rotate(10deg);
         }
         h1 {
             color: #FFFFFF;

@@ -1,5 +1,5 @@
 import React from 'react'
-import Film from '../Components/Ui/Film/Film'
+import Film from '../Components/Film/Film'
 
 const Movie = () => {
   return (
