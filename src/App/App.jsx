@@ -4,7 +4,7 @@ import Navbar from "../Components/Main/Navbar/Navbar";
 import "./App.scss";
 import Footer from "../Components/Main/Footer/Footer";
 import Home from "../Pages/Home";
-import Stream from "../Components/Stream/Stream";
+import Stream from "../Components/Ui/Stream/Stream";
 
 import Movies from "../Pages/Movies";
 import Plan from "../Components/Plan/PLan";
