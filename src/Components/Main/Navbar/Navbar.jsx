@@ -27,14 +27,13 @@ const Navbar = ({ setShowModal}) => {
       <div className={`Navbar ${isHome ? "home-navbar" : "page-navbar"}`}>
         <div className="Navbar_left">
           <div className="img">
-            <img src="images/Logo-1.png" alt="" />
+            <NavLink to={"/"}><img src="images/Logo-1.png" alt="" /></NavLink>
           </div>
         </div>
 
         <div className="Navbar_center">
           <div className="ul">
             <ul>
-              <li onClick={() => setActive(1)} className={active === 1 ? "active" : ""}><NavLink to="/">Home</NavLink></li>
               <li onClick={() => setActive(2)} className={active === 2 ? "active" : ""}><NavLink to="/movies">Movies & Shows</NavLink></li>
               <li onClick={() => setActive(3)} className={active === 3 ? "active" : ""}><NavLink to="/support"> Support</NavLink></li>
               <li onClick={() => setActive(4)} className={active === 4 ? "active" : ""}><NavLink to="/subscriptions">Subscriptions</NavLink></li>

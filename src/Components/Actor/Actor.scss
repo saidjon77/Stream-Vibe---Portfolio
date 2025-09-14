@@ -7,9 +7,10 @@
     .Img_text {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: start;
         gap: 100px;
+        padding-right: 20px;
 
         .Images {
             display: flex;

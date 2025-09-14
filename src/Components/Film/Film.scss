@@ -4,10 +4,42 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    .Video{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 7.5px;
 
+        button{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #0F0F0F;
+            border: 2px solid #1F1F1F;
+            color: #999999;
+            transition: all 0.25s ease-out;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button:hover{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #E50000;
+            border: 2px solid #FFFFFF;
+            color: #FFFFFF;
+            box-shadow: 0px 0px 50px 0px #E50000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
     .Img {
         width: 100%;
-        background-image: url(images/Film.png);
         background-size: cover;
         object-fit: cover;
         background-position: center;
@@ -18,6 +50,7 @@
         border-radius: 15px;
         align-items: end;
         position: relative;
+        object-fit: cover;
 
         .overlay {
             width: 100%;
@@ -125,16 +158,33 @@
                     align-items: center;
                     gap: 15px;
 
-                    img {
-                        border-radius: 12px;
-                        cursor: pointer;
-                        transition: all 0.25s ease-out;
-                        object-fit: cover;
+                    .Swiper {
+                        display: flex;
+
+                        .SwiperSlide {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 20px;
+
+                            .Img {
+                                width: 90px;
+                                height: auto;
+
+                                img {
+                                    width: 100%;
+                                    height: 50%;
+                                    border-radius: 12px;
+                                    cursor: pointer;
+                                    transition: all 0.25s ease-out;
+                                    object-fit: cover;
+                                }
+
+                            }
+                        }
                     }
 
-                    img:hover {
-                        transform: scale(1.1);
-                    }
                 }
 
                 .text {
@@ -142,6 +192,37 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+
+
+                    .control_box {
+                        padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+
+                        button {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: #141414;
+                            border: 2px solid #1F1F1F;
+                            color: #999999;
+                            cursor: pointer;
+                            transition: all 0.25s ease-out;
+                        }
+
+                        button:hover {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: #E50000;
+                            border: 2px solid #FFFFFF;
+                            color: #FFFFFF;
+                            cursor: pointer;
+                            box-shadow: 0px 0px 50px 0px #E50000;
+                        }
+                    }
 
                     h3 {
                         color: #999999;
@@ -324,6 +405,149 @@
             justify-content: center;
             gap: 20px;
 
+            .Director_Compositer {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 20px;
+
+
+                h3 {
+                    color: #999999;
+                }
+
+                .Directors {
+                    width: 100%;
+                    padding: 15px;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 25px;
+                    border-radius: 8px;
+                    border: 2px solid #1F1F1F;
+                    background-color: #141414;
+                    transition: all 0.25s ease-out;
+                    cursor: pointer;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 8px;
+                        object-fit: cover;
+                    }
+
+                    .text {
+                        h3 {
+                            color: #FFFFFF;
+                            font-weight: 200;
+                        }
+
+                        h4 {
+                            font-weight: 200;
+                            color: #999999;
+                        }
+                    }
+                }
+
+                .Compositers {
+                    width: 100%;
+                    padding: 15px;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 25px;
+                    border-radius: 8px;
+                    border: 2px solid #1F1F1F;
+                    background-color: #141414;
+                    margin-top: 15px;
+                    transition: all 0.25s ease-out;
+                    cursor: pointer;
+
+                    img {
+                        border-radius: 8px;
+                        width: 50px;
+                        height: 50px;
+                        object-fit: cover;
+                    }
+
+                    .text {
+                        h3 {
+                            font-weight: 200;
+                            color: #FFFFFF;
+                        }
+
+                        h4 {
+                            font-weight: 200;
+                            color: #999999;
+                        }
+                    }
+                }
+
+                .Compositers:hover {
+                    width: 100%;
+                    padding: 15px;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 25px;
+                    border-radius: 8px;
+                    border: 2px solid #FFFFFF;
+                    background-color: #E50000;
+                    box-shadow: 0px 0px 50px 0px #E50000;
+
+                    img {
+                        border-radius: 8px;
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    .text {
+                        h3 {
+                            font-weight: 200;
+                            color: #FFFFFF;
+                        }
+
+                        h4 {
+                            font-weight: 200;
+                            color: #999999;
+                        }
+                    }
+                }
+
+                .Directors:hover {
+                    width: 100%;
+                    padding: 15px;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 25px;
+                    border-radius: 8px;
+                    border: 2px solid #FFFFFF;
+                    background-color: #E50000;
+                    box-shadow: 0px 0px 50px 0px #E50000;
+
+                    img {
+                        border-radius: 8px;
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    .text {
+                        h3 {
+                            font-weight: 200;
+                            color: #FFFFFF;
+                        }
+
+                        h4 {
+                            font-weight: 200;
+                            color: #999999;
+                        }
+                    }
+                }
+            }
 
             .TextData {
                 width: 100%;
@@ -2495,4 +2719,4 @@
         }
     }
 
-}   
+}

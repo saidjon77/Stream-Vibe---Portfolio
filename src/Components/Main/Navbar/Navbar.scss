@@ -4,7 +4,8 @@
 }
 
 .Navbar {
-    width: 1536px;
+    width: 100%;
+    max-width: 1536px;
     padding: 10px 40px;
     display: flex;
     justify-content: space-between;

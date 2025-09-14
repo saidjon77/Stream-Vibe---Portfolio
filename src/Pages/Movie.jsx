@@ -1,10 +1,12 @@
 import React from 'react'
 import Film from '../Components/Film/Film'
+import { useParams } from 'react-router-dom'
 
 const Movie = () => {
+  const {id} = useParams();
   return (
     <div className='Movie'> 
-      <Film/>
+      <Film id={id}/>
     </div>
   )
 }

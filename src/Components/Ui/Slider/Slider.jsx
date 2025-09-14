@@ -103,7 +103,7 @@ const Slider = ({title, description, url, uniqueId }) => {
           },
           1280: {
             // katta ekran
-            slidesPerView: 6,
+            slidesPerView: 1,
             spaceBetween: 1,
           },
           1536: {
@@ -118,7 +118,7 @@ const Slider = ({title, description, url, uniqueId }) => {
             <div className="slide-row">
               {group.reverse().map((movie) => (
                 <div className="card" key={movie.id}>
-                  <NavLink to={`/movie`}>
+                  <NavLink to={`/movie/${movie.id}`}>
                     <img
                       src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                       alt={movie.title}

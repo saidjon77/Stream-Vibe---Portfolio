@@ -7,22 +7,6 @@ const API_KEY =
 const BASE_URL = "https://api.themoviedb.org/3";
 const IMG = "https://image.tmdb.org/t/p/w500";
 
-const blockedWords = [
-  "kiss",
-  "sex",
-  "erotic",
-  "xxx",
-  "porn",
-  "adult",
-  "edge",
-  "triangle",
-  "cazadoras",
-  "anora",
-  "couple",
-  "stepmom",
-  "spermageddon",
-];
-
 export default function Search() {
   const [active, setActive] = useState(4); // 1:Movies 2:TV 3:Actors 4:All
   const [query, setQuery] = useState("");
@@ -49,19 +33,14 @@ export default function Search() {
     }
   };
 
-  const isBlockedTitle = (str = "") =>
-    blockedWords.some((w) => str.toLowerCase().includes(w));
-
   const normalizeItems = (tab, items) => {
-    // Adult & keyword filters, and unify fields for UI
+    // faqat "adult" tekshiruv qoladi
     return items
       .filter((item) => {
         if (item.media_type === "person") {
-          // Allow only if not adult and name is safe
-          return !isBlockedTitle(item.name) && item.adult !== true;
+          return item.adult !== true;
         }
-        const title = item.title || item.name || "";
-        return item.adult !== true && !isBlockedTitle(title);
+        return item.adult !== true;
       })
       .map((item) => {
         const media =
@@ -128,7 +107,6 @@ export default function Search() {
 
   const onTab = (tab) => {
     setActive(tab);
-    // If already have a query, re-run on tab change
     if (query.trim()) doSearch(true);
   };
 
@@ -176,14 +154,13 @@ export default function Search() {
       <div className="Movies_boxes">
         {results.map((item) => (
           <div className="Box" key={`${item.media}-${item.id}`}>
-            <NavLink to={"/movie"}>
+            <NavLink to={`/movie/${item.id}`}>
               <div className="Img">
                 {item.img ? (
                   <img src={`${IMG}${item.img}`} alt={item.title} />
                 ) : (
                   <div className="img-fallback">No Image</div>
                 )}
-                {/* <span className="badge">{item.media.toUpperCase()}</span> */}
               </div>
             </NavLink>
             <div className="Text">

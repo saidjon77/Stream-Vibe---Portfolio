@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, NavLink, Route, Routes, useLocation } from "react-router-dom";
+import {
+  BrowserRouter,
+  NavLink,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import Navbar from "../Components/Main/Navbar/Navbar";
 import "./App.scss";
 import Footer from "../Components/Main/Footer/Footer";
@@ -52,37 +58,63 @@ const AppContent = () => {
             <img src="Assets/Vector.png" alt="" />
           </div>
           <div className="Modal_top_right">
-            <button onClick={() => setShowModal(false)}><i className="fa-solid fa-xmark"></i></button>
+            <button onClick={() => setShowModal(false)}>
+              <i className="fa-solid fa-xmark"></i>
+            </button>
           </div>
         </div>
         <div className="Modal_bottom">
           <ul>
-            <li><NavLink to={"/"}>Home <i className="fa-solid fa-angle-right"></i></NavLink></li>
-            <li><NavLink to={"/movies"}>Movies & Shows <i className="fa-solid fa-angle-right"></i></NavLink></li>
-            <li><NavLink to={"/support"}>Support <i className="fa-solid fa-angle-right"></i></NavLink></li>
-            <li><NavLink to={"/subscriptions"}>Subscriptions <i className="fa-solid fa-angle-right"></i></NavLink></li>
-            <li><NavLink to={"/search"}>Search <i className="fa-solid fa-angle-right"></i></NavLink></li>
-            <li><NavLink to={"/logout"}>Logout <i className="fa-solid fa-angle-right"></i></NavLink></li>
+            <li>
+              <NavLink to={"/"}>
+                Home <i className="fa-solid fa-angle-right"></i>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/movies"}>
+                Movies & Shows <i className="fa-solid fa-angle-right"></i>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/support"}>
+                Support <i className="fa-solid fa-angle-right"></i>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/subscriptions"}>
+                Subscriptions <i className="fa-solid fa-angle-right"></i>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/search"}>
+                Search <i className="fa-solid fa-angle-right"></i>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/logout"}>
+                Logout <i className="fa-solid fa-angle-right"></i>
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>
       <Routes>
-        <Route path="/movie" element={<Movie />} />
+        <Route path="/movie/:id" element={<Movie />} />
         <Route path="/" element={<Home />} />
         <Route path="/movies" element={<Movies />} />
         <Route path="/subscriptions" element={<Plan />} />
         <Route path="/support" element={<SupportPage />} />
         <Route path="/logout" element={<LogoutPage />} />
         <Route path="/search" element={<SearchPage />} />
-        <Route path="/actor" element={<Actor/>} />
+        <Route path="/actor/:id" element={<Actor />} />
       </Routes>
       <Stream />
+      <Footer />  
       {showButton && (
         <button className="scrollTopBtn" onClick={scrollToTop}>
           <i className="fa-solid fa-arrow-up"></i>
         </button>
       )}
-      <Footer />
     </div>
   );
 };
